@@ -1,5 +1,5 @@
 #include <stdio.h>
-#include <stdlib.h>
+
 /**
  * main - entry point
  * Description: print possible combination of two numbers
@@ -7,28 +7,32 @@
  */
 int main(void)
 {
-	int c;
-	int d = 0;
+	int i, e;
 
-	while (d < 10)
+	i = 48;
+	e = 48;
+
+	while (e < 58)
 	{
-		c = 0;
-		while (c < 10)
-			if (d != c && d < c)
+		i = 48;
+		while (i  < 58)
+		{
+			if (e != i && e < i)
 			{
-				putchar('0' + d);
-				putchar('0' + c);
-
-				if (c + d != 17)
+				putchar(e);
+				putchar(i);
+				if (e != i && e == 56)
 				{
-					putchar(',');
-					putchar(' ');
+					break;
 				}
+				putchar(',');
+				putchar(' ');
 			}
-		c++;
+			i++;
+
+		}
+		e++;
 	}
-	d++;
-}
 	putchar('/n');
 	return (0);
 }
