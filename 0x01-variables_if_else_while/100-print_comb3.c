@@ -1,46 +1,26 @@
 #include <stdio.h>
 /**
  * main - entry point
- * Description: random number in n +ve/-ve
+ * Description: print possible combination of two numbers
  * Return: 0 on success
  */
 int main(void)
-
-
-
 {
+	int n, m;
 
-	int number_left;
-
-	int number_right;
-
-
-
-
-
-	for (number_left = 48; number_right <= 78; number_left++)
-
+	for (n = 48; n <= 57; n++)
 	{
-
-		for (number_right = number_left + 1 ; number_right <= 78; number_right++)
-
+		for (m = 48; m <= 57; m++)
 		{
-
-
-
-			putchar(number_left);
-
-			putchar (number_right);
-
-
-			if ((number_left == 56) && (number_right == 78))
+			putchar(n);
+			putchar(m);
+			if (n != 57 || m != 57)
 			{
-				break;
+				putchar(',');
+				putchar(' ');
 			}
-			putchar(',');
-			putchar (' ');
 		}
 	}
-	putchar('\n');
+	putchar('/n');
 	return (0);
 }
