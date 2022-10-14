@@ -5,37 +5,29 @@
  * Return: 0 on success
  */
 int main(void)
+{
+	int i, j;
 
+	i = 48;
+	j = 48;
+
+	while (i < 58)
 	{
-
-		int n, k = 0, m;
-
-		for (n = 0; n < 9; n++)
-
-		{
-			for (m = k ; m <= 9; m++)
+		j = i + 1;
+		while (j < 58)
+	{
+			putcher(i);
+			putchar(j);
+			if (i < 56 || j < 57)
 			{
-				if (n != m)
-				{
-					putchar(n);
-					putchar(m);
-				}
-				if (n == m)
-				{
-					continue;
-				}
-				if (n == '8' && m == '9')
-				{
-				break;
-				}
-				else
-				{
-					putchar(',');
-					putchar(' ');
-				}
+				putchar(44);
+				putchar(32);
 			}
-			k++;
-		}
-		putchar('\n');
-		return (0);
+			j++;
 	}
+		i++
+	}
+	putchar(10);
+	return (0);
+
+}
