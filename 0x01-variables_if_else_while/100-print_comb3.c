@@ -1,4 +1,5 @@
 #include <stdio.h>
+
 /**
  * main - entry point
  * Description: print possible combination of two numbers
