@@ -34,31 +34,18 @@ int main(void)
 				putchar((m % 10) + '0');
 
 				if (n == 98  && m == 99)
-
 				{
-
 					break;
-
 				}
-
 				else
-
 				{
-
 					putchar(',');
-
 					putchar(' ');
-
 				}
-
 			}
-
 		}
-
 	}
-
 	putchar(10);
 
 	return (0);
-
 }

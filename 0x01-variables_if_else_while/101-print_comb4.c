@@ -22,45 +22,24 @@ int main(void)
 			for (l = '0'; l <= '9'; l++)
 
 			{
-
 				if (n < m && m < l)
-
 				{
-
 					putchar(n);
-
 					putchar(m);
-
 					putchar(l);
-
 					if (n == '7' && m == '8' && l == '9')
-
 					{
-
 						break;
-
 					}
-
 					else
-
 					{
-
 						putchar(',');
-
 						putchar(' ');
-
 					}
-
 				}
-
 			}
-
 		}
-
 	}
-
 	putchar('\n');
-
 	return (0);
-
 }

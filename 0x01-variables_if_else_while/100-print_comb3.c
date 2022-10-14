@@ -1,5 +1,4 @@
 #include <stdio.h>
-
 /**
  * main - entry point
  * Description: random number in n +ve/-ve
@@ -7,62 +6,36 @@
  */
 int main(void)
 
-{
-
-	int n, k = 0, m;
-
-	for (n = 0; n < 9; n++)
-
 	{
 
-		for (m = k ; m <= 9; m++)
+		int n, k = 0, m;
+
+		for (n = 0; n < 9; n++)
 
 		{
-
-			if (n != m)
-
+			for (m = k ; m <= 9; m++)
 			{
-
-				putchar(n);
-
-				putchar(m);
-
-			}
-
-			if (n == m)
-
-			{
-
-				continue;
-
-			}
-
-			if (n == '8' && m == '9')
-
-			{
-
+				if (n != m)
+				{
+					putchar(n);
+					putchar(m);
+				}
+				if (n == m)
+				{
+					continue;
+				}
+				if (n == '8' && m == '9')
+				{
 				break;
-
+				}
+				else
+				{
+					putchar(',');
+					putchar(' ');
+				}
 			}
-
-			else
-
-			{
-
-				putchar(',');
-
-				putchar(' ');
-
-			}
-
+			k++;
 		}
-
-		k++;
-
+		putchar('\n');
+		return (0);
 	}
-
-	putchar('\n');
-
-	return (0);
-
-}
