@@ -2,9 +2,8 @@
 /**
  * main - prints putchar followed by a new line
  * Description - prints putchar
- * Return 0 on success
+ * Return: 0
  */
-
 int main(void)
 {
 	_putchar('_');
@@ -18,5 +17,4 @@ int main(void)
 	_putchar('\n');
 
 	return (0);
-
 }
